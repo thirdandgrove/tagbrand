@@ -38,7 +38,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v5
-      - name: Enable HTTPS when the certificate is ready
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: ./scripts/configure_pages.sh

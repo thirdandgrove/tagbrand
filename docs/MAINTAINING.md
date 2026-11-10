@@ -89,9 +89,6 @@ Open a PR. Merging to `main` deploys only `index.html`, `404.html`, `robots.txt`
 also be started with the workflow's manual trigger. `source/`, `scripts/`, `docs/`,
 and `manifest.json` are not published.
 
-After deployment, the workflow also runs the Pages configuration script to turn
-on HTTPS when the certificate becomes ready.
-
 The page has `noindex, nofollow`. Keep `robots.txt` allowing access so crawlers
 can read that directive.
 
