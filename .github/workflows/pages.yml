@@ -1,0 +1,44 @@
+name: Deploy brand guide to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  pages: write
+  id-token: write
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Assemble only public site files
+        run: |
+          mkdir -p _site
+          cp index.html 404.html robots.txt _site/
+          cp -R assets downloads _site/
+      - name: Verify manifest
+        run: python3 scripts/check_manifest.py
+      - name: Verify staged site
+        run: python3 scripts/check_site.py _site
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
+      - name: Enable HTTPS when the certificate is ready
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: ./scripts/configure_pages.sh
