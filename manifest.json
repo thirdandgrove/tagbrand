@@ -1007,8 +1007,8 @@
       "role": "Prebuilt download (full kit, fonts included)"
     },
     "index.html": {
-      "bytes": 4651201,
-      "sha256": "759bbd786c47b477161083a79ba357d1f56af5f3b9118b50d17215aa02c9cf2b",
+      "bytes": 4657789,
+      "sha256": "e897ed7f74bd101546093295d361a6b196971a994126e351f434a294099b6ebd",
       "role": "The guide, with asset-store references pointed at local files"
     },
     "downloads/TG_Brand_Video.zip": {
@@ -1035,6 +1035,26 @@
       "bytes": 119304,
       "sha256": "b13dea85356cd5df8f56e6c93146ef9e6af921d28c92d9c22e184e18da1e613e",
       "role": "Prebuilt download"
+    },
+    "assets/vendor/SplitText.min.js": {
+      "role": "Vendored runtime library or license",
+      "bytes": 7732,
+      "sha256": "419f7027a5f086a12cb7988736d8fdd3a6ed2200229661de25b6628ca7ced344"
+    },
+    "assets/vendor/gsap.min.js": {
+      "role": "Vendored runtime library or license",
+      "bytes": 72927,
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    "assets/vendor/lenis.LICENSE": {
+      "role": "Vendored runtime library or license",
+      "bytes": 1096,
+      "sha256": "bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089"
+    },
+    "assets/vendor/lenis.min.js": {
+      "role": "Vendored runtime library or license",
+      "bytes": 18722,
+      "sha256": "53195c9797e7ce7bf9d7fa9242b08209e57f46de4c9dac126a6494fa780e3346"
     }
   }
 }
