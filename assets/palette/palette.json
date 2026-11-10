@@ -1,0 +1,37 @@
+[
+  {
+    "name": "black",
+    "hex": "#000000",
+    "rgb": "0, 0, 0"
+  },
+  {
+    "name": "ink",
+    "hex": "#141414",
+    "rgb": "20, 20, 20"
+  },
+  {
+    "name": "charcoal",
+    "hex": "#222222",
+    "rgb": "34, 34, 34"
+  },
+  {
+    "name": "grey",
+    "hex": "#8E8E8E",
+    "rgb": "142, 142, 142"
+  },
+  {
+    "name": "light-grey",
+    "hex": "#D6D6D6",
+    "rgb": "214, 214, 214"
+  },
+  {
+    "name": "off-white",
+    "hex": "#F5F5F5",
+    "rgb": "245, 245, 245"
+  },
+  {
+    "name": "white",
+    "hex": "#FFFFFF",
+    "rgb": "255, 255, 255"
+  }
+]
